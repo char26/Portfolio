@@ -29,7 +29,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 5rem;
+    width: 7rem;
 }
 
 #gink-example {
@@ -49,9 +49,14 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 50%;
     height: 100%;
+    font-size: x-large;
+}
+
+.column-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 /* Bouncing Arrow */
