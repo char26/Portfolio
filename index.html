@@ -15,7 +15,10 @@
 
 <body>
     <section id="landing">
-        <div id="text-animation-container"></div>
+        <div id="animation-wrapper">
+            <div id="text-animation-container"></div>
+        </div>
+
         <div class="downArrow bounce" id="arrow-text-container">
             <h2>Projects</h2>
             <a href="#gink"><img width="60" height="60" alt=""
@@ -58,7 +61,12 @@
         <div class="project-column column-text">
             <h2>Bet</h2>
             <p>
-                <strong>Description</strong>:
+                <strong>Description</strong>: I created a webapp to allow users to "bet" on stocks, long or short.
+                However, there is no real money involved. Each bet uses a "chip", and each user begins with one chip.
+                The site allows users to track their stats for correct and incorrect bets, and even place stops to close
+                a bet based on the current stock price. Bet uses the Polygon API for real-time stock data. Through this
+                project, I have gained experience hosting, deploying Docker containers, and running scheduled jobs
+                through Google Cloud and cron.
             </p>
             <p>
                 <strong>Technologies</strong>: JavaScript, Neo4j Graph Database, CYPHER Query Language, Python,
@@ -92,7 +100,12 @@
         <div class="project-column column-text">
             <h2>Typing</h2>
             <p>
-                <strong>Description</strong>:
+                <strong>Description</strong>: Typing is a simple web application designed to help users improve at
+                typing and
+                spelling in a language they are learning. Currently, English and Spanish are the languages offered. Once
+                the user selects their language and difficulty, they will hear a word spoken by speechSynthesis API, and
+                they will need to type out the word and spell it correctly. This
+                project uses vanilla JavaScript and web components for the frontend, and Express for a backend.
             </p>
             <p><strong>Technologies</strong>: JavaScript, Express, spacey (to clean words list)</p>
         </div>
