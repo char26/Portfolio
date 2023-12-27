@@ -53,10 +53,29 @@ a {
     width: 100%;
 }
 
+#projects-track {
+    display: flex;
+    overflow: scroll;
+}
+
+#left-arrow {
+    transform: rotate(90deg);
+}
+
+#right-arrow {
+    transform: rotate(-90deg);
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* Classes */
-.project-section {
-    overflow: hidden;
+.project-div {
     height: 100svh;
+    min-width: 100%;
     color: white;
     display: flex;
     flex-direction: row;
@@ -68,17 +87,19 @@ a {
     justify-content: center;
     width: 50%;
     height: 100%;
-    font-size: x-large;
 }
 
 .column-text {
     padding-left: 3rem;
     padding-right: 3rem;
+    font-size: clamp(0.2rem, 2vw, 1.5rem);
 }
 
+
 /* Bouncing Arrow */
-.downArrow {
+.arrow {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(53deg) brightness(105%) contrast(105%);
+    cursor: pointer;
 }
 
 .bounce {

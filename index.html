@@ -17,102 +17,152 @@
     <section id="landing">
         <div id="text-animation-container"></div>
 
-        <div class="downArrow bounce" id="arrow-text-container">
+        <div class="arrow bounce" id="arrow-text-container">
             <h2>Projects</h2>
             <a href="#gink"><img width="60" height="60" alt=""
                     src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" /></a>
         </div>
     </section>
-
-    <section id="gink" class="project-section">
-        <div class="project-column">
-            <img src="./public/images/gink-example.png" id="gink-example" alt="">
+    <section id="projects">
+        <div class="arrow" id="left-arrow">
+            <img width="60" height="60" alt=""
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
         </div>
-        <div class="project-column column-text">
-            <div id="project-title-container">
-                <h2>Gink</h2>
-                <a href="https://github.com/x5e/gink" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        <div id="projects-track" data-show-card="0">
+            <div id="gink" class="project-div">
+                <div class="project-column">
+                    <img src="./public/images/gink-example.png" id="gink-example" alt="">
+                </div>
+                <div class="project-column column-text">
+                    <div id="project-title-container">
+                        <h2>Gink</h2>
+                        <a href="https://github.com/x5e/gink" target="_blank"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+                    <p>
+                        Gink is a versioned, eventually consistent, multi-paradigm database
+                        management system.
+                        It takes a "protocol-first" approach, which facilitates multiple implementations that can share
+                        data. My personal contributions to Gink have included implementing new data structures, such as
+                        Role,
+                        PairMap,
+                        PairSet, KeySet, Box, and more, as well as creating a MemoryStore which caches the database
+                        in-memory
+                        using
+                        Tree Maps in
+                        TypeScript in order to improve read performance compared to IndexedDb. I have also handled most
+                        of
+                        the
+                        development operations, primarily integration testing in the browser, documentation generation
+                        and
+                        deployment, and automatic
+                        package publishing.
+                    </p>
+                    <p>
+                        JavaScript/TypeScript, Python, Docker, Linux (Debian/Ubuntu),
+                        Make, protocol buffers, Webpack, GitHub Actions (unit/integration testing,
+                        documentation generation, linting, and package publishing to PyPI and NPM).
+                    </p>
+                </div>
             </div>
-            <p>
-                Gink is a versioned, eventually consistent, multi-paradigm database
-                management system.
-                It takes a "protocol-first" approach, which facilitates multiple implementations that can share
-                data. My personal contributions to Gink have included implementing new data structures, such as Role,
-                PairMap,
-                PairSet, KeySet, Box, and more, as well as creating a MemoryStore which caches the database in-memory
-                using
-                Tree Maps in
-                TypeScript in order to improve read performance compared to IndexedDb. I have also handled most of
-                the
-                development operations, primarily integration testing in the browser, documentation generation and
-                deployment, and automatic
-                package publishing.
-            </p>
-            <p>
-                JavaScript/TypeScript, Python, Docker, Linux (Debian/Ubuntu),
-                Make, protocol buffers, Webpack, GitHub Actions (unit/integration testing,
-                documentation generation, linting, and package publishing to PyPI and NPM).
-            </p>
-        </div>
-    </section>
-    <section id="bet" class="project-section">
-        <div class="project-column column-text">
-            <h2>Bet</h2>
-            <p>
-                I created a webapp to allow users to "bet" on stocks, long or short.
-                However, there is no real money involved. Each bet uses a "chip", and each user begins with one chip.
-                The site allows users to track their stats for correct and incorrect bets, and even place stops to close
-                a bet based on the current stock price. Bet uses the Polygon API for real-time stock data. Through this
-                project, I have gained experience hosting, deploying Docker containers, and running scheduled jobs
-                through Google Cloud and cron.
-            </p>
-            <p>
-                JavaScript, Neo4j Graph Database, CYPHER Query Language, Python,
-                Flask, Docker, Google Cloud Run, Google Cloud Scheduler, HTML, CSS
-            </p>
-        </div>
-        <div class="project-column">
+            <div id="bet" class="project-div">
+                <div class="project-column column-text">
+                    <h2>Bet</h2>
+                    <p>
+                        I created a webapp to allow users to "bet" on stocks, long or short.
+                        However, there is no real money involved. Each bet uses a "chip", and each user begins with one
+                        chip.
+                        The site allows users to track their stats for correct and incorrect bets, and even place stops
+                        to
+                        close
+                        a bet based on the current stock price. Bet uses the Polygon API for real-time stock data.
+                        Through
+                        this
+                        project, I have gained experience hosting, deploying Docker containers, and running scheduled
+                        jobs
+                        through Google Cloud and cron.
+                    </p>
+                    <p>
+                        JavaScript, Neo4j Graph Database, CYPHER Query Language, Python,
+                        Flask, Docker, Google Cloud Run, Google Cloud Scheduler, HTML, CSS
+                    </p>
+                </div>
+                <div class="project-column">
 
-        </div>
-    </section>
-    <section id="various-apis" class="project-section">
-        <div class="project-column">
+                </div>
+            </div>
+            <div id="various-apis" class="project-div">
+                <div class="project-column">
 
-        </div>
-        <div class="project-column column-text">
-            <h2>Various APIs</h2>
-            <p>
-                <strong><a href="https://rapidapi.com/charliealders26/api/website-screenshot12" target="_blank">Website
-                        Screenshot</a></strong>: A simple API with only one endpoint (for now), which, upon GET request,
-                responds with an image of the website at the provided URL. This API combines Express and Puppeteer to
-                quickly start a headless browser and take a screenshot of any website.
-                <br> <br>
-                <strong><a href="https://rapidapi.com/charliealders26/api/tons-of-words" target="_blank">Tons of
-                        Words</a></strong>: Access over 370,000 English words in many different ways, whether they are
-                random, filtered, or indexed. Created using JavaScript and Express, and hosted on Heroku.
-            </p>
-            <p>JavaScript, Express, Puppeteer, Heroku</p>
-        </div>
-    </section>
-    <section id="typing" class="project-section">
-        <div class="project-column column-text">
-            <h2>Typing</h2>
-            <p>
-                Typing is a simple web application designed to help users improve at
-                typing and
-                spelling in a language they are learning. Currently, English and Spanish are the languages offered. Once
-                the user selects their language and difficulty, they will hear a word spoken by speechSynthesis API, and
-                they will need to type out the word and spell it correctly. This
-                project uses vanilla JavaScript and web components for the frontend, and Express for a backend.
-            </p>
-            <p>JavaScript, Express, spacey (to clean words list)</p>
-        </div>
-        <div class="project-column">
+                </div>
+                <div class="project-column column-text">
+                    <h2>Various APIs</h2>
+                    <p>
+                        <strong><a href="https://rapidapi.com/charliealders26/api/website-screenshot12"
+                                target="_blank">Website
+                                Screenshot</a></strong>: A simple API with only one endpoint (for now), which, upon GET
+                        request,
+                        responds with an image of the website at the provided URL. This API combines Express and
+                        Puppeteer
+                        to
+                        quickly start a headless browser and take a screenshot of any website.
+                        <br> <br>
+                        <strong><a href="https://rapidapi.com/charliealders26/api/tons-of-words" target="_blank">Tons of
+                                Words</a></strong>: Access over 370,000 English words in many different ways, whether
+                        they
+                        are
+                        random, filtered, or indexed. Created using JavaScript and Express, and hosted on Heroku.
+                    </p>
+                    <p>JavaScript, Express, Puppeteer, Heroku</p>
+                </div>
+            </div>
+            <div id="typing" class="project-div">
+                <div class="project-column column-text">
+                    <h2>Typing</h2>
+                    <p>
+                        Typing is a simple web application designed to help users improve at
+                        typing and
+                        spelling in a language they are learning. Currently, English and Spanish are the languages
+                        offered.
+                        Once
+                        the user selects their language and difficulty, they will hear a word spoken by speechSynthesis
+                        API,
+                        and
+                        they will need to type out the word and spell it correctly. This
+                        project uses vanilla JavaScript and web components for the frontend, and Express for a backend.
+                    </p>
+                    <p>JavaScript, Express, spacey (to clean words list)</p>
+                </div>
+                <div class="project-column">
 
+                </div>
+            </div>
+        </div>
+        <div class="arrow" id="right-arrow">
+            <img width="60" height="60" alt=""
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
         </div>
     </section>
 </body>
 
 <script src="public/js/vara_handwriting.js"></script>
+<script>
+    const projectsTrack = document.getElementById('projects-track');
+    const scrollByWidth = document.getElementById('gink').offsetWidth;
+    document.getElementById('right-arrow').onclick = () => {
+        projectsTrack.scrollBy({
+            top: 0,
+            left: scrollByWidth,
+            behavior: "smooth"
+        });
+    };
+    document.getElementById('left-arrow').onclick = () => {
+        projectsTrack.scrollBy({
+            top: 0,
+            left: -scrollByWidth,
+            behavior: "smooth"
+        });
+    };
+</script>
 
 </html>
