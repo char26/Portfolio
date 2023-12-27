@@ -1,6 +1,6 @@
-let fontSize = 72;
-if (window.screen.width > 700) fontSize = 32;
-else if (window.screen.width < 1200) fontSize = 65;
+let fontSize = 102;
+if (window.screen.width > 700) fontSize = 62;
+else if (window.screen.width < 1200) fontSize = 95;
 
 let vara = new Vara(
     "#text-animation-container",
