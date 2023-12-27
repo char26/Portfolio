@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -16,12 +20,15 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
     bottom: 0;
+    width: 10rem;
 }
 
 #landing {
     height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #project-title-container {
@@ -29,7 +36,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 5rem;
+    width: 7rem;
 }
 
 #gink-example {
@@ -37,8 +44,18 @@ a {
     max-height: 100%;
 }
 
+#text-animation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 /* Classes */
 .project-section {
+    overflow: hidden;
     height: 100svh;
     color: white;
     display: flex;
@@ -49,17 +66,19 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 50%;
     height: 100%;
+    font-size: x-large;
+}
+
+.column-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 /* Bouncing Arrow */
 .downArrow {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(53deg) brightness(105%) contrast(105%);
-    position: fixed;
-    bottom: 45%;
-    left: 50%;
 }
 
 .bounce {
