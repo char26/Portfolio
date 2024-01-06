@@ -12,9 +12,9 @@ let vara = new Vara(
         }
     ],
     {
-        strokeWidth: 2,
+        strokeWidth: 1,
         color: "#fff",
         fontSize: fontSize,
-        textAlign: "center"
+        textAlign: "center",
     }
 );
