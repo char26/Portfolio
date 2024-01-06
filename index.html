@@ -148,6 +148,24 @@
 <script src="public/js/vara_handwriting.js"></script>
 <script>
     const projectsTrack = document.getElementById('projects-track');
+    const leftArrow = document.getElementById("left-arrow");
+    const rightArrow = document.getElementById("right-arrow");
+    projectsTrack.onscroll = () => {
+        if (projectsTrack.scrollLeft == 0) {
+            leftArrow.style.opacity = 0;
+            leftArrow.style.cursor = "none";
+        } else if (projectsTrack.scrollLeft == projectsTrack.scrollWidth - projectsTrack.clientWidth) {
+            rightArrow.style.opacity = 0;
+            rightArrow.style.cursor = "none";
+        } else {
+            leftArrow.style.opacity = 1;
+            leftArrow.style.cursor = "pointer";
+            rightArrow.style.opacity = 1;
+            rightArrow.style.cursor = "pointer";
+        }
+
+    };
+
     const scrollByWidth = document.getElementById('gink').offsetWidth;
     document.getElementById('right-arrow').onclick = () => {
         projectsTrack.scrollBy({
