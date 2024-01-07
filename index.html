@@ -153,10 +153,10 @@
     projectsTrack.onscroll = () => {
         if (projectsTrack.scrollLeft == 0) {
             leftArrow.style.opacity = 0;
-            leftArrow.style.cursor = "none";
+            leftArrow.style.cursor = "default";
         } else if (projectsTrack.scrollLeft == projectsTrack.scrollWidth - projectsTrack.clientWidth) {
             rightArrow.style.opacity = 0;
-            rightArrow.style.cursor = "none";
+            rightArrow.style.cursor = "default";
         } else {
             leftArrow.style.opacity = 1;
             leftArrow.style.cursor = "pointer";

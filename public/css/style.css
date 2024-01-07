@@ -55,15 +55,19 @@ a {
 
 #projects-track {
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #left-arrow {
     transform: rotate(90deg);
+    opacity: 0;
+    cursor: default;
 }
 
 #right-arrow {
     transform: rotate(-90deg);
+    opacity: 1;
+    cursor: pointer;
 }
 
 #projects {
