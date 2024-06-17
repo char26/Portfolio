@@ -1,185 +1,48 @@
-/* HTML Elements */
-html {
-    font-family: 'Oswald', 'sans-serif';
-    margin: 0;
-    background-color: black;
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
 }
 
-a {
-    text-decoration: none;
+#main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 100%;
+    padding: 20px;
+}
+
+.prompt-cmd {
+    display: flex;
+    flex-direction: column;
+}
+
+#cursor {
     color: white;
 }
 
-/* IDs */
-#arrow-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    bottom: 0;
-    width: 10rem;
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
 }
 
-#landing {
-    height: 100svh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#cursor::after {
+    content: "";
+    width: 10px;
+    height: 20px;
+    background: white;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
 }
 
-#project-title-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 7rem;
-}
-
-#gink-example {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#text-animation-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-#projects-track {
-    display: flex;
-    overflow: hidden;
-}
-
-#left-arrow {
-    transform: rotate(90deg);
-    opacity: 0;
-    cursor: default;
-}
-
-#right-arrow {
-    transform: rotate(-90deg);
-    opacity: 1;
-    cursor: pointer;
-}
-
-#projects {
+.prompt-cmd {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-/* Classes */
-.project-div {
-    height: 100svh;
-    min-width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: row;
-}
-
-.project-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-}
-
-.column-text {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: clamp(0.2rem, 2vw, 1.5rem);
-}
-
-
-/* Bouncing Arrow */
-.arrow {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(53deg) brightness(105%) contrast(105%);
-    cursor: pointer;
-}
-
-.bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
-}
-
-@-moz-keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-
-    40% {
-        -moz-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-
-    60% {
-        -moz-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-
-@-webkit-keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-
-    40% {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-
-    60% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-
-    40% {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-
-    60% {
-        -moz-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
+    justify-content: left;
 }
